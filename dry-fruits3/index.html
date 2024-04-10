@@ -20,6 +20,8 @@
 
     </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,12 +30,13 @@
         <header
             class="w-full flex pt-[20px] pl-[10px] bg-opacity-50 backdrop-blur-lg py-4 fixed top-0 z-10 lg:gap-[10px] xl:gap-[20px]">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100"
-                class="text-[17px] pt-[7px] hidden md:block">
+                class="text-[17px] ml-28 pt-[7px]  md:block">
                 <a href="#" class="ml-[14px] text-green-700">основной</a>
                 <a href="./page/kontact.html" class="ml-[14px] hover:text-green-700">contact</a>
             </div>
             <div data-aos="fade-down" class="logo" data-aos-duration="1000">
-                <a href="#" class="text-[32.5px] ml-[22.2rem] font-mono"><span class="text-green-700">DRY</span>
+                <a href="#" class=" mr-3 h-6 sm:h-9 text-[32.5px] ml-[22.2rem] font-mono"><span
+                        class="text-green-700">DRY</span>
                     market</a>
             </div>
             <div data-aos="fade-left" aria-colspan="phone-numbers" data-aos-duration="1000" data-aos-delay="1100"
@@ -44,24 +47,24 @@
         </header>
 
 
-        <video autoplay muted loop id="bg-video"
-            poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-Poster-NA.jpg">
-            <source
-                src="https://digitalassets.tesla.com/tesla-contents/video/upload/Model-3-Main-Hero-Video-Desktop-NA.mp4"
-                type="video/mp4">
-        </video>
+        <div class="relative w-full md:w-3/2 lg:w-3/2">
+            <video class="w-full md:h-auto" autoplay muted loop id="bg-video"
+                poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-Poster-NA.jpg">
+                <source src="./IMG_1110.MP4" type="video/mp4">
+            </video>
+        </div>
 
 
 
-        <div
-            class="div4   grid grid-cols-1 gap-[3.6rem] ml-2 pl-[1rem] mt-[6rem] sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+
+        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-4  gap-[2rem] ml-2 pl-[1px] mt-[4%]">
 
             <a href="./page/page.html">
                 <div
-                    class="relative group cursor-pointer overflow-hidden duration-500  text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px] w-[23.7rem] h-[22rem]">
+                    class=" relative group cursor-pointer overflow-hidden duration-500  text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px] w-[21.7rem] h-[20rem]">
                     <div>
                         <div class="group-hover:scale-110 duration-500">
-                            <img class="rounded-[15px] w-[20.3rem] ml-[6px] h-[14rem]"
+                            <img class="rounded-[15px] w-[18.5rem] ml-[4px] h-[13rem]"
                                 src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY="
                                 alt="">
                         </div>
@@ -81,56 +84,10 @@
 
             <a href="">
                 <div
-                    class="relative group cursor-pointer overflow-hidden duration-500 w-[23.7rem] h-[22rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
-                    <div>
-                        <div class="group-hover:scale-110 w-[20.3rem] ml-[6px] h-[14rem] duration-500">
-                            <img class="rounded-[15px]"
-                                src="https://media.istockphoto.com/id/1218693828/photo/wooden-bowl-with-mixed-nuts-on-rustic-table-top-view-healthy-food-and-snack.webp?b=1&s=170667a&w=0&k=20&c=z0M4nKUBHtFFcU-7IswAl5M64MRVnNzzgvIY0AJsw9I="
-                                alt="">
-                        </div>
-                        <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
-                            <div
-                                class="absolute -z-10 left-0 w-[23.7rem] h-28 opacity-0 duration-500 group-hover:opacity-50">
-                                <!-- <img src="https://media.istockphoto.com/id/1218693828/photo/wooden-bowl-with-mixed-nuts-on-rustic-table-top-view-healthy-food-and-snack.webp?b=1&s=170667a&w=0&k=20&c=z0M4nKUBHtFFcU-7IswAl5M64MRVnNzzgvIY0AJsw9I=" alt=""> -->
-                            </div>
-                            <span class="text-xl font-bold text-green-700">Hover me!</span>
-                            <p class="text-gray-800 group-hover:opacity-100 w-56 duration-500 opacity-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="">
-                <div
-                    class="relative group cursor-pointer overflow-hidden duration-500 w-[23.7rem] h-[22rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
-                    <div>
-                        <div class="group-hover:scale-110 w-[20.3rem] ml-[6px] h-[14rem] duration-500">
-                            <img class="rounded-[15px]"
-                                src="https://media.istockphoto.com/id/886520932/photo/dried-fruits-figs-apricots-plums-and-nuts-on-wooden-background.jpg?s=612x612&w=0&k=20&c=RH3zxI1Wwt50c08q72mQb7noLTBL0gg8IFtJgXuQEqs="
-                                alt="">
-                        </div>
-                        <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
-                            <div
-                                class="absolute -z-10 left-0 w-[23.7rem] h-28 opacity-0 duration-500 group-hover:opacity-50">
-                                <!-- <img src="https://media.istockphoto.com/id/886520932/photo/dried-fruits-figs-apricots-plums-and-nuts-on-wooden-background.jpg?s=612x612&w=0&k=20&c=RH3zxI1Wwt50c08q72mQb7noLTBL0gg8IFtJgXuQEqs=" alt=""> -->
-                            </div>
-                            <span class="text-xl font-bold text-green-700">Hover me!</span>
-                            <p class="text-gray-800 group-hover:opacity-100 w-56 duration-500 opacity-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="">
-                <div
-                    class="relative group cursor-pointer overflow-hidden duration-500 w-[23.7rem] h-[22rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
+                    class=" relative group cursor-pointer overflow-hidden duration-500  text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px] w-[21.7rem] h-[20rem]">
                     <div>
                         <div class="group-hover:scale-110 duration-500">
-                            <img class="rounded-[15px] w-[20.3rem] ml-[6px] h-[14rem]"
+                            <img class="rounded-[15px] w-[18.5rem] ml-[4px] h-[13rem]"
                                 src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY="
                                 alt="">
                         </div>
@@ -150,10 +107,56 @@
 
             <a href="">
                 <div
-                    class="relative group cursor-pointer overflow-hidden duration-500 w-[23.7rem] h-[22rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
+                    class=" relative group cursor-pointer overflow-hidden duration-500  text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px] w-[21.7rem] h-[20rem]">
                     <div>
-                        <div class="group-hover:scale-110 w-[20.3rem] ml-[6px] h-[14rem] duration-500">
-                            <img class="rounded-[15px]"
+                        <div class="group-hover:scale-110 duration-500">
+                            <img class="rounded-[15px] w-[18.5rem] ml-[4px] h-[13rem]"
+                                src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY="
+                                alt="">
+                        </div>
+                        <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+                            <div
+                                class="absolute -z-10 left-0 w-[23.7rem] h-28 opacity-0 duration-500 group-hover:opacity-50">
+                                <!-- <img src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY=" alt=""> -->
+                            </div>
+                            <span class="text-xl font-bold text-green-700">Hover me!</span>
+                            <p class="text-gray-800 group-hover:opacity-100 w-56 duration-500 opacity-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div
+                    class="relative group cursor-pointer overflow-hidden duration-500 w-[21.7rem] h-[20rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
+                    <div>
+                        <div class="group-hover:scale-110 duration-500">
+                            <img class="rounded-[15px] w-[18.5rem] ml-[4px] h-[13rem]"
+                                src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY="
+                                alt="">
+                        </div>
+                        <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
+                            <div
+                                class="absolute -z-10 left-0 w-[23.7rem] h-28 opacity-0 duration-500 group-hover:opacity-50">
+                                <!-- <img src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY=" alt=""> -->
+                            </div>
+                            <span class="text-xl font-bold text-green-700">Hover me!</span>
+                            <p class="text-gray-800 group-hover:opacity-100 w-56 duration-500 opacity-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div
+                    class="relative group cursor-pointer overflow-hidden duration-500 w-[21.5rem] h-[20rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
+                    <div>
+                        <div class="group-hover:scale-110 duration-500">
+                            <img class="rounded-[15px] w-[18.5rem] ml-[3.5px]  h-[13rem]"
                                 src="https://media.istockphoto.com/id/1218693828/photo/wooden-bowl-with-mixed-nuts-on-rustic-table-top-view-healthy-food-and-snack.webp?b=1&s=170667a&w=0&k=20&c=z0M4nKUBHtFFcU-7IswAl5M64MRVnNzzgvIY0AJsw9I="
                                 alt="">
                         </div>
@@ -173,17 +176,17 @@
 
             <a href="">
                 <div
-                    class="relative group cursor-pointer overflow-hidden duration-500 w-[23.7rem] h-[22rem] text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px]">
+                    class=" relative group cursor-pointer overflow-hidden duration-500  text-gray-50 p-5 border-solid border-[1px] border-gray-400 rounded-[20px] w-[21.5rem] h-[20rem]">
                     <div>
-                        <div class="group-hover:scale-110 w-[20.3rem] ml-[6px] h-[14rem] duration-500">
-                            <img class="rounded-[15px]"
-                                src="https://media.istockphoto.com/id/886520932/photo/dried-fruits-figs-apricots-plums-and-nuts-on-wooden-background.jpg?s=612x612&w=0&k=20&c=RH3zxI1Wwt50c08q72mQb7noLTBL0gg8IFtJgXuQEqs="
+                        <div class="group-hover:scale-110 duration-500">
+                            <img class="rounded-[15px] w-[18.5rem] ml-[3.2px]  h-[13rem]"
+                                src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY="
                                 alt="">
                         </div>
                         <div class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
                             <div
                                 class="absolute -z-10 left-0 w-[23.7rem] h-28 opacity-0 duration-500 group-hover:opacity-50">
-                                <!-- <img src="https://media.istockphoto.com/id/886520932/photo/dried-fruits-figs-apricots-plums-and-nuts-on-wooden-background.jpg?s=612x612&w=0&k=20&c=RH3zxI1Wwt50c08q72mQb7noLTBL0gg8IFtJgXuQEqs=" alt=""> -->
+                                <!-- <img src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY=" alt=""> -->
                             </div>
                             <span class="text-xl font-bold text-green-700">Hover me!</span>
                             <p class="text-gray-800 group-hover:opacity-100 w-56 duration-500 opacity-0">
@@ -201,7 +204,7 @@
             <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-between">
 
-                    <a href="" class="text-[32.5px] ml-[1%] font-mono text-center"><span
+                    <a href="" class="md:ml-90 text-[32.5px] ml-[1%] font-mono text-center"><span
                             class="text-green-700">DRY</span>
                         market</a>
 
