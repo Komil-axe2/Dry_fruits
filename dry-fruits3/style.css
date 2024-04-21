@@ -1,133 +1,48 @@
-html,
-body {
+.menu__link {
+    color: #ffffffb6;
+    line-height: 2;
     position: relative;
-    height: 100%;
 }
 
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+.menu__link:hover {
+    color: #fff;
 }
 
-.swiper {
-    margin-top: 50px;
-    width: 72.5%;
-    height: 75vh;
-    border-radius: 15px;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.autoplay-progress {
+.menu__link::before {
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: rgb(128, 0, 0);
     position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: var(--swiper-theme-color);
-}
-
-.autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
+    bottom: -.75rem;
     left: 0;
-    top: 0px;
-    z-index: 10;
+    transition: width .4s;
+}
+
+.menu__link:hover::before {
     width: 100%;
-    height: 100%;
-    stroke-width: 4px;
-    stroke: var(--swiper-theme-color);
-    fill: none;
-    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
+    /* Adjust the width on hover */
 }
 
-.swiper-button-next {
-    color: rgb(21 128 61);
+.menu__link.active::before {
+    width: 90%;
+    /* Adjust the width when active */
 }
 
-.swiper-button-prev {
-    color: rgb(21 128 61);
-}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .menu__link::before {
+        height: 2px;
+        /* Adjust the thickness for smaller screens */
+        bottom: -.375rem;
+        /* Adjust the position for smaller screens */
 
-.autoplay-progress {
-    color: rgb(21 128 61);
-}
-
-/* Common styles for all screen sizes */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* Example background color */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    /* Ensures the header stays on top of other content */
-}
-
-/* Styles for mobile devices (up to 767px) */
-@media only screen and (max-width: 767px) {
-    .header {
-        padding: 5px;
+        /* Adjust the width for smaller screens */
     }
 
-    .logo {
-        width: 50px;
-        /* Adjust size as needed */
-        height: auto;
-        margin-left: -90%;
+    .menu__link:hover::before,
+    .menu__link.active::before {
+        width: 10%;
+        /* Adjust the width on hover and when active for smaller screens */
     }
-
-    .div4 {
-        margin-left: 90rem;
-    }
-
-    .phone-numbers {
-        font-size: 12px;
-        /* Adjust font size as needed */
-    }
-
-
-}
-
-/* Styles for tablets and small desktops (768px - 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Add tablet-specific styles here */
-}
-
-/* Styles for medium to large desktops (1024px and above) */
-@media only screen and (min-width: 1024px) {
-    /* Add desktop-specific styles here */
 }
